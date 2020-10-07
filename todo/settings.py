@@ -29,7 +29,8 @@ DEBUG = True
 ALLOWED_HOSTS = ['13.125.22.16',
 '127.0.0.1',
 'ec2-13-125-22-16.ap-northeast-2.compute.amazonaws.com',
-'localhost'
+'localhost',
+'127.0.0.1:8000'
 ]
 
 
@@ -134,6 +135,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = "todo/static"
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
